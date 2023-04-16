@@ -15,3 +15,6 @@ insert into AddressBook values( "Anuroop" , "Kanniah", "Hyd","Hyderabad","Telang
 
 update AddressBook set city="KarimNagar" where FirstName= "Anuroop";
 select * from AddressBook;
+
+delete from AddressBook where FirstName= "Naveen";
+select * from AddressBook;
