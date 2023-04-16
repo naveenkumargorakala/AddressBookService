@@ -8,3 +8,7 @@ create table AddressBook(FirstName varchar(20) not null,
                          zip int not null,
                          PhoneNumber double not null,
                          email varchar(50));
+
+insert into AddressBook values( "Naveen" , "Kumar" , "NPM", "HPM","AP",532243,7997978987,"naveen@gorakala.com");
+insert into AddressBook values( "Prathamesh","Adam", "solapur", "Mumbai", "Maharastra",565673,9898787980,"pratham@gmail.com");
+insert into AddressBook values( "Anuroop" , "Kanniah", "Hyd","Hyderabad","Telangana",543345,9676898789,"Anuroop@gmail.com");
