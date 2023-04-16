@@ -1,1 +1,10 @@
 create database AddressBookService;
+use AddressBookService;
+create table AddressBook(FirstName varchar(20) not null,
+                         LastName varchar(20) not null,
+                         address varchar(100) not null,
+                         city varchar(20) not null,
+                         state varchar(20) not null,
+                         zip int not null,
+                         PhoneNumber double not null,
+                         email varchar(50));
