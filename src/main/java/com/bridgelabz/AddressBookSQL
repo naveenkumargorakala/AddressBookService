@@ -24,3 +24,11 @@ select * from AddressBook where city = "Mumbai" or state ="Telangana";
 select count(city) from AddressBook;
 
 select * from AddressBook where city= "KarimNagar" order by firstName;
+
+update AddressBook set AddressBook_name= "FriendsContacts" ,AddressBook_type= "Friends"
+where FirstName="Anuroop" or FirstName="Prathamesh";
+select * from AddressBook;update AddressBook set AddressBook_name="FamilyContacts",AddressBook_type = "Family"
+where FirstName= "Mohan";
+update AddressBook set AddressBook_name="OfficialContacts", AddressBook_type= "Proffesion"
+where Firstname= "Anil";
+select * from AddressBook;
