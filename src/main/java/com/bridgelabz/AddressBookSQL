@@ -20,3 +20,5 @@ delete from AddressBook where FirstName= "Naveen";
 select * from AddressBook;
 
 select * from AddressBook where city = "Mumbai" or state ="Telangana";
+
+select count(city) from AddressBook;
