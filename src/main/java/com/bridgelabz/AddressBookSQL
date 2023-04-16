@@ -1,1 +1,36 @@
 create database AddressBookService;
+use AddressBookService;
+create table AddressBook(FirstName varchar(20) not null,
+                         LastName varchar(20) not null,
+                         address varchar(100) not null,
+                         city varchar(20) not null,
+                         state varchar(20) not null,
+                         zip int not null,
+                         PhoneNumber double not null,
+                         email varchar(50));
+
+insert into AddressBook values( "Naveen" , "Kumar" , "NPM", "HPM","AP",532243,7997978987,"naveen@gorakala.com");
+insert into AddressBook values( "Prathamesh","Adam", "solapur", "Mumbai", "Maharastra",565673,9898787980,"pratham@gmail.com");
+insert into AddressBook values( "Anuroop" , "Kanniah", "Hyd","Hyderabad","Telangana",543345,9676898789,"Anuroop@gmail.com");
+
+update AddressBook set city="KarimNagar" where FirstName= "Anuroop";
+select * from AddressBook;
+
+delete from AddressBook where FirstName= "Naveen";
+select * from AddressBook;
+
+select * from AddressBook where city = "Mumbai" or state ="Telangana";
+
+select count(city) from AddressBook;
+
+select * from AddressBook where city= "KarimNagar" order by firstName;
+
+update AddressBook set AddressBook_name= "FriendsContacts" ,AddressBook_type= "Friends"
+where FirstName="Anuroop" or FirstName="Prathamesh";
+select * from AddressBook;update AddressBook set AddressBook_name="FamilyContacts",AddressBook_type = "Family"
+where FirstName= "Mohan";
+update AddressBook set AddressBook_name="OfficialContacts", AddressBook_type= "Proffesion"
+where Firstname= "Anil";
+select * from AddressBook;
+
+select Count(AddressBook_type) from AddressBook where AddressBook_type="Friends";
