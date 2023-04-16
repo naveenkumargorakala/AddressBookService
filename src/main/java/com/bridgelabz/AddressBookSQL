@@ -32,3 +32,5 @@ where FirstName= "Mohan";
 update AddressBook set AddressBook_name="OfficialContacts", AddressBook_type= "Proffesion"
 where Firstname= "Anil";
 select * from AddressBook;
+
+select Count(AddressBook_type) from AddressBook where AddressBook_type="Friends";
